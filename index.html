@@ -4,19 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-    body {
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background: linear-gradient(to bottom, #6f6770, #b0a2b1, #d1c0d6);
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: rgb(16, 14, 14);
-        text-align: center;
-        font-weight: 800;
-    }
+   body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #6f6770, #b0a2b1, #d1c0d6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(16, 14, 14);
+    text-align: center;
+    font-weight: 800;
+}
+
+
 
     h1 {
         font-size: 28px;
@@ -64,20 +64,25 @@
 
 
     
-    @media only screen and (min-width: 300px) and (max-width: 600px) {
-        h1 { font-size: 22px; }
-        h2 { font-size: 22px; }
-        .button-container {
-            flex-direction: column;  
-            align-items: center;
-            gap: 15px;
-        }
-        .button {
-            width: 80%;
-            padding: 12px 0;
-            font-size: 14px;
-        }
+   @media only screen and (max-width: 600px) {
+    h1 { font-size: 22px; }
+    h2 { font-size: 22px; }
+
+    .button-container {
+        flex-direction: column;  
+        align-items: stretch;   
+        gap: 15px;
+        width: 100%;         
+        padding: 0 10px;        
     }
+
+    .button {
+        width: 100%;              
+        padding: 14px 0;
+        font-size: 16px;
+    }
+}
+
 
     @media only screen and (min-width: 601px) and (max-width: 900px) {
         h1 { font-size: 26px; }
@@ -114,4 +119,5 @@
     </div>
 </body>
 </html>
+
 
