@@ -1,135 +1,137 @@
 <html>
 <head>
   <title>Student Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+  
   <style>
     body {
-        font-family: Algerian, sans-serif; 
-        background: linear-gradient(to right, #a7b2b5, #b695e0, #cbdfe9);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        overflow-x: hidden;
+      font-family: Algerian, sans-serif; 
+      background: linear-gradient(to right, #a7b2b5, #b695e0, #cbdfe9);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
     }
 
     h2 {
-        font-size: 40px;
-        font-weight: bold;
-        text-align: center;
-        color: black;
-        text-shadow: 1px 1px 2px white;
-        margin-bottom: 20px;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      text-shadow: 1px 1px 2px white;
+      margin: 20px 0;
     }
 
     .login-box {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.3);
-        padding: 30px 50px;
-        width: 380px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      padding: 30px 50px;
+      width: 380px;
+      max-width: 90%;
+      margin-top: auto;
+      margin-bottom: auto;
     }
 
     label {
-        font-weight: bold;
-        font-size: 18px;
-        color: black;
-        text-shadow: 1px 1px 1px white;
-        display: block;
-        margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      color: black;
+      text-shadow: 1px 1px 1px white;
+      display: block;
+      margin-bottom: 5px;
     }
 
     input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 1px solid black;
-        border-radius: 20px;
-        box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3);
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid black;
+      border-radius: 20px;
+      box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3);
     }
 
     .buttons {
-        display: flex;
-        justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
     }
 
     button {
-        width: 45%;
-        padding: 10px;
-        border: none;
-        border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: 0.3s;
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
     }
 
     .login, .cancel {
-        background-color: #4CAF50;
+      background-color: #4CAF50;
     }
 
     button:hover {
-        opacity: 0.85;
+      opacity: 0.85;
     }
 
     a {
-        text-decoration: none;
-        width: 100%;
-        text-align: center;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
     }
 
 
-@media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 22px;
-    }
-    .login-box {
-        width: 260px;
+
+
+
+    @media only screen and (max-width: 600px) {
+      h2 { font-size: 22px; }
+      .login-box {
+        width: 90%;
         padding: 15px 20px;
+      }
+      input { font-size: 14px; }
+      button { padding: 8px; font-size: 14px; }
+      .buttons { flex-direction: column; }
+      button { width: 100%; margin-bottom: 10px; }
     }
-    input {
-        font-size: 14px;
-    }
-    button {
-        padding: 8px;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-    h2 {
-        font-size: 28px;
-    }
-    .login-box {
-        width: 320px;
-        padding: 20px 30px;
-    }
-}
 
 
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
-    h2 {
-        font-size: 35px;
-    }
-    .login-box {
-        width: 360px;
-        padding: 25px 40px;
-    }
-}
 
 
-@media only screen and (min-width: 1201px) {
-    h2 {
-        font-size: 40px;
-    }
-    .login-box {
-        width: 380px;
-        padding: 30px 50px;
-    }
-}
 
+
+    @media only screen and (min-width: 601px) and (max-width: 900px) {
+      h2 { font-size: 28px; }
+      .login-box { width: 320px; padding: 20px 30px; }
+    }
+
+
+
+
+
+
+    @media only screen and (min-width: 901px) and (max-width: 1200px) {
+      h2 { font-size: 35px; }
+      .login-box { width: 360px; padding: 25px 40px; }
+    }
+
+
+
+
+
+
+    @media only screen and (min-width: 1201px) {
+      h2 { font-size: 40px; }
+      .login-box { width: 380px; padding: 30px 50px; }
+    }
   </style>
 </head>
 
@@ -154,4 +156,5 @@
 
 </body>
 </html>
+
 
