@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>EMPLOYEE LOG IN</title>
+
+<style>
+    body {
+        font-family: algerian;
+        background: linear-gradient(to right, #a7b2b5, #b695e0, #cbdfe9);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px 2px white;
+        margin-bottom: 20px;
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        padding: 30px 50px;
+        width: 380px;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        text-shadow: 1px 1px 1px white;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 45%;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .login {
+        background-color: #4CAF50;
+    }
+
+    .cancel {
+        background-color: #4CAF50;
+    }
+
+    button:hover {
+        opacity: 0.85;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+
+    
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 22px;
+    }
+    .login-box {
+        width: 260px;
+        padding: 15px 20px;
+    }
+    input {
+        font-size: 14px;
+    }
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    h2 {
+        font-size: 28px;
+    }
+    .login-box {
+        width: 320px;
+        padding: 20px 30px;
+    }
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+    h2 {
+        font-size: 35px;
+    }
+    .login-box {
+        width: 360px;
+        padding: 25px 40px;
+    }
+}
+
+
+@media only screen and (min-width: 1201px) {
+    h2 {
+        font-size: 40px;
+    }
+    .login-box {
+        width: 380px;
+        padding: 30px 50px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+    <h2>EMPLOYEE LOG IN</h2>
+
+    <div class="login-box">
+        <form action="dashboard.html" method="get">
+            <label>NAME:</label>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <label>PASSWORD:</label>
+            <input type="password" placeholder="Password" required>
+
+            <div class="buttons">
+                <a href="../task9/dash1.3.html"><button type="button" class="login">Login</button></a>
+                <a href="../task9/index.html"><button type="button" class="cancel">Cancel</button></a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
