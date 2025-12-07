@@ -1,13 +1,13 @@
 <html>
 <head>
 <title>Student Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-   
 body {
     font-family: 'Times New Roman', Times, serif;
     background: rgb(180, 166, 187);
-    height: 100vh;
+    min-height: 100vh;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +20,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     width: 480px;
+    max-width: 95%;
     color: black;
 }
 
 h2 {
     text-align: center;
-    font-family: "algerian";
+    font-family: "Algerian", serif;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 25px;
@@ -52,6 +53,9 @@ input, select {
 .buttons {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 button {
@@ -59,10 +63,10 @@ button {
     border: none;
     border-radius: 20px;
     padding: 8px 30px;
-    margin: 0 10px;
     color: white;
     font-size: 15px;
     cursor: pointer;
+    flex: 1;
 }
 
 button:hover {
@@ -82,14 +86,9 @@ button.cancel:hover {
 
 
 
-
-
-
-
-
 @media only screen and (max-width: 600px) {
     .form-container {
-        width: 300px;
+        width: 95%;
         padding: 20px;
     }
     label {
@@ -99,11 +98,18 @@ button.cancel:hover {
     input, select {
         width: 100%;
     }
+    .buttons {
+        flex-direction: column;  
+    }
     button {
-        padding: 8px 20px;
-        font-size: 13px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 10px;
     }
 }
+
+
 
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
@@ -111,28 +117,25 @@ button.cancel:hover {
         width: 350px;
         padding: 25px 30px;
     }
-    label {
-        width: 100%;
-    }
-    input, select {
+    label, input, select {
         width: 100%;
     }
 }
+
+
 
 
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
-    .form-container {
-        width: 420px;
-    }
+    .form-container { width: 420px; }
 }
+
+
+
 
 
 @media only screen and (min-width: 1201px) {
-    .form-container {
-        width: 480px;
-    }
+    .form-container { width: 480px; }
 }
-
 </style>
 </head>
 
@@ -188,4 +191,5 @@ button.cancel:hover {
     </div>
 </body>
 </html>
+
 
